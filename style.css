@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-areas: "sidebar header-one header-one"
+                       "sidebar header-two header-two"
+                       "sidebar projects   announcements"
+                       "sidebar projects   trending";
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.header-one {
+  grid-area: header-one;
+}
+
+.header-two {
+  grid-area: header-two;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.announcements{
+  grid-area: announcements;
+}
+
+.trending{
+  grid-area: trending;
+}
