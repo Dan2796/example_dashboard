@@ -87,8 +87,8 @@ li > img {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
   align-items: first;
 }
 
@@ -117,18 +117,39 @@ li > img {
 .announcements{
   background-color: white;
   border-radius: 10px;
+  padding: 10px 10%;
 }
 
 .announcement-item{
+  border-bottom: solid 1px grey;
+}
+
+.announcement-item:last-child {
+  border: 0px;
 }
 
 .trending-container {
 }
 
 .trending{
+  padding: 10px 10%;
   background-color: white;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .item-trending{
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  height: 50px;
+  border-radius: 50px;
+}
+
+.handle {
+  font-weight: 700;
 }
