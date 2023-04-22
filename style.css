@@ -22,25 +22,31 @@ body {
                        "sidebar header-two header-two"
                        "sidebar projects   announcements-and-trending"
                        "sidebar projects   announcements-and-trending";
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 100px 100px 6fr 6fr;
+  grid-template-columns: 270px 3fr 1fr;
+  grid-template-rows: 100px 140px 6fr 6fr;
 }
+
+
 
 .sidebar {
   grid-area: sidebar;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   padding: 10px;
   background-color: var(--sidebar-blue);
   font-weight: bold;
   color: white;
 }
 
-#dashboard-icon {
+.dashboard-icon {
   height: 40px;
+  margin-right: 10px;
 }
 
+.dashboard-header {
+  font-size: 2rem;
+}
 .sidebar-header {
   display: flex;
   align-items: center;
@@ -51,19 +57,27 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0px;
+  margin: 0px;
+  gap: 10px;
 }
 
 li {
   display:flex;
   align-items: center;
+  padding: 0px;
+  margin: 0px;
 }
 
-img {
+ul {
+  font-size: 1.4rem;
+}
+
+.icon {
   height: 20px;
   margin-right: 10px;
 }
 
-li > img {
+li > .icon {
   padding: 10px;
 }
 
@@ -73,6 +87,49 @@ li > img {
 
 .header-two {
   grid-area: header-two;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.header-two-left {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 1fr 3fr;
+  min-width: 400px;
+}
+
+.three-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.avatar-main {
+  height: 90px;
+  flex: 0;
+  border-radius: 90px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  margin-right: 20px;
+}
+
+.hi-there {
+  font-weight: 700;
+}
+
+.my-name {
+  font-weight: 700;
+  font-size: 2rem;
+}
+button {
+  background-color: var(--sidebar-blue);
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  height: 50px;
+  width: 150px;
+  border-radius: 40px;
 }
 
 .projects-container, .announcements-and-trending {
@@ -148,6 +205,7 @@ li > img {
 .avatar {
   height: 50px;
   border-radius: 50px;
+  margin-right: 10px;
 }
 
 .handle {
