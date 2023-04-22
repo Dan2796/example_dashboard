@@ -26,8 +26,6 @@ body {
   grid-template-rows: 100px 140px 6fr 6fr;
 }
 
-
-
 .sidebar {
   grid-area: sidebar;
   display: flex;
@@ -83,8 +81,41 @@ li > .icon {
 
 .header-one {
   grid-area: header-one;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 0px 30px;
 }
 
+.searchbar-container {
+  display: flex;
+  align-items: center;
+  flex: auto;
+  margin-right: auto;
+}
+
+.searchbar {
+  background-color: var(--dashboard-grey);
+  border-radius: 30px;
+  padding: 0px 20px;
+  height: 30px;
+  width: 70%;
+  border: none;
+  outline: none;
+}
+
+#searchbar:focus {
+  border: solid 1px var(--sidebar-blue);
+}
+
+.header-icon {
+  height: 40px;
+}
+
+.header-one-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 .header-two {
   grid-area: header-two;
   display: flex;
